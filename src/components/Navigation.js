@@ -6,9 +6,11 @@ import '../css/Navigation.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAtom, faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 import CustomModal from './CustomModal'; 
+// import CustomCadastro from './CustomModal';
 
 export default function Navigation() {
   const [modalShow, setModalShow] = useState(false);
+  // const[modalCadastro, setModalCadastroShow] = useState(false);
 
   return (
     <>
@@ -33,6 +35,7 @@ export default function Navigation() {
         </Container>
       </Navbar>
       <CustomModal show={modalShow} onHide={() => setModalShow(false)} />
+      {/* <CustomCadastro show={modalCadastro} onHide={() => setModalCadastroShow(false)} /> */}
     </>
   );
 }
